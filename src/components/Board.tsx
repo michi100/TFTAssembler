@@ -28,7 +28,7 @@ const BoardUnit: React.FC<BoardUnitProps> = ({ unit }) => {
       <img
         src={unit.imageUrl}
         alt={unit.name}
-        className="w-full h-full object-cover rounded-md"
+        className="w-full h-full object-cover object-right rounded-md"
       />
     </div>
   );
@@ -42,17 +42,24 @@ const Board: React.FC<BoardProps> = ({ units }) => {
   const { setNodeRef } = useDroppable({
     id: "board",
   });
+  const cellSize = 150;
 
   return (
     <div className="p-4 bg-gray-800 rounded-lg">
       <div
         ref={setNodeRef}
         className="grid grid-cols-7 grid-rows-4 gap-1 w-full h-[400px]"
+        style={{
+          width: `1000px`,
+          height: `650px`,
+          gridTemplateColumns: `repeat(7, ${cellSize}px)`,
+          gridTemplateRows: `repeat(4, ${cellSize}px)`,
+        }}
       >
         {Array.from({ length: 28 }).map((_, index) => (
           <div
             key={index}
-            className="bg-gray-700 rounded-md flex items-center justify-center"
+            className="bg-gray-400 rounded-md flex items-center justify-center"
           >
             {units[index] && <BoardUnit unit={units[index]} />}
           </div>

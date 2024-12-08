@@ -23,12 +23,12 @@ const UnitItem: React.FC<UnitItemProps> = ({ unit }) => {
       style={style}
       {...listeners}
       {...attributes}
-      className="w-12 h-12 bg-gray-700 rounded-md cursor-move"
+      className="w-24 h-24 bg-gray-700 rounded-md cursor-move"
     >
       <img
         src={unit.imageUrl}
         alt={unit.name}
-        className="w-full h-full object-cover rounded-md"
+        className="w-full h-full object-cover object-right rounded-md"
       />
     </div>
   );

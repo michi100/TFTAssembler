@@ -6,6 +6,7 @@ export interface Unit {
 }
 
 export interface Trait {
+  id: string;
   name: string;
   breakpoints: number[];
   description: string;

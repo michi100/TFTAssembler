@@ -1,24 +1,178 @@
 import { Trait } from "../types";
 
-export const traits: Trait[] = [
-  {
-    name: "執行官",
+export const traits: { [id: string]: Trait } = {
+  kda: {
+    id: "kda",
+    name: "K/DA",
+    breakpoints: [3, 5, 7, 10],
+    description: "追加のダメージを与える",
+  },
+  eightbit: {
+    id: "eightbit",
+    name: "8ビット",
+    breakpoints: [2, 4, 6],
+    description: "攻撃が上昇する",
+  },
+  edm: {
+    id: "edm",
+    name: "EDM",
+    breakpoints: [3, 4, 5, 6],
+    description: "",
+  },
+  heartsteal: {
+    id: "heartsteal",
+    name: "Heartsteel",
+    breakpoints: [3, 5, 7, 10],
+    description: "",
+  },
+  pentakill: {
+    id: "pentakill",
+    name: "Pentakill",
+    breakpoints: [3, 5, 7, 10],
+    description: "",
+  },
+  truedamage: {
+    id: "truedamage",
+    name: "True Damage",
+    breakpoints: [2, 4, 6, 9],
+    description: "",
+  },
+  emo: {
+    id: "emo",
+    name: "エモ",
+    breakpoints: [2, 4, 6],
+    description: "",
+  },
+  country: {
+    id: "country",
+    name: "カントリー",
+    breakpoints: [3, 5, 7],
+    description: "",
+  },
+  jazz: {
+    id: "jazz",
+    name: "ジャズ",
+    breakpoints: [3, 4, 5],
+    description: "",
+  },
+  disco: {
+    id: "disco",
+    name: "ディスコ",
+    breakpoints: [3, 4, 5, 6],
+    description: "",
+  },
+  hyperpop: {
+    id: "hyperpop",
+    name: "ハイパーポップ",
+    breakpoints: [2, 3, 4],
+    description: "",
+  },
+  punk: {
+    id: "punk",
+    name: "パンク",
+    breakpoints: [2, 4, 6],
+    description: "",
+  },
+  executioner: {
+    id: "executioner",
+    name: "エクセキューショナー",
+    breakpoints: [2, 4, 6],
+    description: "",
+  },
+  edgelord: {
+    id: "edgelord",
+    name: "エッジロード",
+    breakpoints: [3, 5, 7],
+    description: "",
+  },
+  guardian: {
+    id: "guardian",
+    name: "ガーディアン",
+    breakpoints: [2, 4, 6],
+    description: "",
+  },
+  crowddiver: {
+    id: "crowddiver",
+    name: "クラウドダイバー",
+    breakpoints: [2, 4, 6],
+    description: "",
+  },
+  spellweaver: {
+    id: "spellweaver",
+    name: "スペルウィーバー",
+    breakpoints: [3, 5, 7, 9],
+    description: "",
+  },
+  superfan: {
+    id: "superfan",
+    name: "スーパーファン",
+    breakpoints: [3, 4, 5],
+    description: "",
+  },
+  sentinel: {
+    id: "sentinel",
+    name: "センチネル",
     breakpoints: [2, 4, 6, 8],
-    description: "執行官たちは追加のダメージを与える",
+    description: "",
   },
-  {
-    name: "忍者",
-    breakpoints: [2, 4],
-    description: "忍者たちは攻撃速度が上昇する",
-  },
-  {
-    name: "魔法使い",
+  dazzler: {
+    id: "dazzler",
+    name: "ダズラー",
     breakpoints: [2, 4, 6],
-    description: "魔法使いたちはスキルダメージが増加する",
+    description: "",
   },
-  {
-    name: "挑戦者",
+  bigshot: {
+    id: "bigshot",
+    name: "ビッグショット",
     breakpoints: [2, 4, 6],
-    description: "挑戦者たちは攻撃力が上昇する",
+    description: "",
   },
-];
+  bruiser: {
+    id: "bruiser",
+    name: "ブルーザー",
+    breakpoints: [2, 4, 6],
+    description: "",
+  },
+  mosher: {
+    id: "mosher",
+    name: "モッシャー",
+    breakpoints: [2, 4, 6, 8],
+    description: "",
+  },
+  rapidfire: {
+    id: "rapidfire",
+    name: "ラピッドファイア",
+    breakpoints: [2, 4, 6],
+    description: "",
+  },
+  illbeats: {
+    id: "illbeats",
+    name: "ILLBEATS",
+    breakpoints: [1],
+    description: "",
+  },
+  maestro: {
+    id: "maestro",
+    name: "マエストロ",
+    breakpoints: [1],
+    description: "",
+  },
+  mixmaster: {
+    id: "mixmaster",
+    name: "ミックスマスター",
+    breakpoints: [1],
+    description: "",
+  },
+  wildcard: {
+    id: "wildcard",
+    name: "ワイルドカード",
+    breakpoints: [1],
+    description: "",
+  },
+  breakout: {
+    id: "breakout",
+    name: "ブレイクアウト",
+    breakpoints: [1],
+    description: "",
+  },
+};
