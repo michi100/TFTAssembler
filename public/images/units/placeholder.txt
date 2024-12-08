@@ -1,0 +1,8 @@
+This is a placeholder file. Please replace the following files with actual TFT champion images:
+
+- ahri.png
+- akali.png
+- kaisa.png
+- katarina.png
+- kennen.png
+- zed.png
